@@ -62,7 +62,7 @@ img {
 .navigation {
   margin: 43px 0 0 27px;
   text-align: center;
-  background: url(/images/dist/halftone-small.png) no-repeat 0 0;
+  background: url(/images/dist/halftone-small.png) repeat 0 0;
 
   @media <=mobile {
     margin: -17px 0 0;
@@ -148,7 +148,7 @@ footer {
   margin-top: -15px;
   padding: 90px 12px 30px;
   text-align: center;
-  background: url(/images/dist/halftone-large.png) no-repeat 0 0;
+  background: url(/images/dist/halftone-large.png) repeat 0 0;
   background-size: cover;
 
   .grid-cell {
