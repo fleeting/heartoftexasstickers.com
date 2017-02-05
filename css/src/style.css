@@ -1,0 +1,238 @@
+@import "../../bower_components/normalize-css/normalize.css";
+@import "../../node_modules/mb-jubilee/dist/components/tooltips/tooltips.css";
+@import "_utilities.css";
+@import "_grid.css";
+@import "_fonts.css";
+@import "_animations.css";
+@import "_tooltips.css";
+
+@breakpoints {
+  mobile: 500px;
+}
+
+html, body {
+  height: auto;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: url(/images/dist/background-repeating.jpg) repeat 0 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.outer-container {
+  position: relative;
+  padding-bottom: 100px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    content: "";
+    background: url(/images/dist/textures/texture-block-footer@2x.png) repeat-x 0 0;
+  }
+}
+
+.container {
+  margin: 35px auto 0;
+  max-width: 825px;
+
+  @media <=mobile {
+    margin-top: 15px;
+  }
+}
+
+.grid-cell.logo {
+  @media <=mobile {
+    flex: 0 0 100%;
+    padding: 0;
+    text-align: center;
+
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+.navigation {
+  margin: 43px 0 0 27px;
+  text-align: center;
+  background: url(/images/dist/halftone-small.png) no-repeat 0 0;
+
+  @media <=mobile {
+    margin: 25px 0 0;
+  }
+
+  a {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 12px 47px;
+    color: map(colors, white);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &.download-app {
+      background: url(/images/dist/button-getapp.svg) no-repeat 0 0;
+    }
+
+    &.download-icons {
+      background: url(/images/dist/button-download.svg) no-repeat 0 0;
+    }
+  }
+}
+
+.sticker-pack {
+  margin: 30px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  li {
+    box-sizing: border-box;
+    flex: 1;
+    flex: 0 0 25%;
+    padding: 1em;
+    border: 1px dashed map(colors, tan);
+
+    @media <=mobile {
+      flex: 0 0 50%;
+    }
+  }
+
+  li:nth-child(1n+1) {
+    border-left: 0;
+  }
+
+  li:nth-child(4n+4) {
+    border-right: 0;
+  }
+}
+
+footer {
+  h2 {
+    margin: 0;
+    padding: 33px;
+    font-size: 20px;
+    color: map(colors, paper);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "matchbook_texture";
+    background: url(/images/dist/texture-block-charcoal.png) no-repeat top center;
+
+    @media <=mobile {
+      padding: 17px;
+      font-size: 14px;
+    }
+
+    span {
+      padding: 0 10px;
+      font-size: 30px;
+      color: map(colors, redmeat);
+      vertical-align: middle;
+      animation: pulse 0.45s infinite alternate;
+    }
+  }
+}
+
+.the-humans {
+  margin-top: -15px;
+  padding: 90px 12px 30px;
+  text-align: center;
+  background: url(/images/dist/halftone-large.png) no-repeat 0 0;
+  background-size: cover;
+
+  .grid-cell {
+    padding: 0 0 20px;
+    margin: 0 auto;
+    background: map(colors, paper);
+
+    @media <=mobile {
+      flex: 0 0 100%;
+
+      &:first-child {
+        padding-bottom: 150px;
+      }
+    }
+  }
+
+  .human-photo {
+    margin-top: -60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    transition: all 0.6s;
+  }
+
+  .fleeting .human-photo {
+    box-shadow: -4px 7px 0 0 map(colors, clearsky);
+  }
+
+  .autumn .human-photo {
+    box-shadow: -4px 7px 0 0 map(colors, sunny);
+  }
+
+  h4 {
+    position: relative;
+    width: 165px;
+    margin: 25px auto 0;
+    color: map(colors, black);
+    font-size: 8px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+
+    &::before {
+      border-top: 1px dashed #bab2a4;
+      content: "";
+      margin: 0 auto;
+      position: absolute;
+      top: 48%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 95%;
+      z-index: -1;
+    }
+
+    span {
+      padding: 0 10px;
+      background: map(colors, paper);
+    }
+  }
+
+  h3 {
+    margin: 10px 0 15px;
+    color: map(colors, black);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 9px;
+    color: map(colors, redmeat);
+  }
+
+  a {
+    font-size: 13px;
+    color: map(colors, redmeat);
+    text-decoration: none;
+    transition: all 0.4s;
+
+    &:hover {
+      color: map(colors, clearsky);
+    }
+  }
+}

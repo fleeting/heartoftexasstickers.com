@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "/css/dist/style.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+</head>
+<body>
+  <div class="outer-container">
+    <div class="container">
+      <div class="grid">
+        <div class="grid-cell w30 logo">
+          <img src="/images/dist/heartoftexas-logo@1x.png" alt="Heart of Texas Sticker Pack">
+        </div>
+
+        <div class="grid-cell navigation">
+          <a href="#" class="download-app">Get The App</a><br />
+          <a href="#" class="download-icons" data-tooltip="Coming Soon!" data-tooltip-size="large">Download The Icon Pack</a>
+        </div>
+      </div>
+
+      {{ content }}
+
+      <footer>
+        <h2>Created with <span>❤</span> by Austinites</h2>
+
+        <div class="grid the-humans">
+          <div class="grid-cell w45 fleeting">
+            <img src="/images/dist/james.jpg" alt="fleeting" class="human-photo">
+
+            <h4><span>Development</span></h4>
+            <h3>James Fleeting</h3>
+            <p><a href="http://iwasasuperhero.com">website</a> &bull; <a href="https://twitter.com/fleetingftw">twitter</a></p>
+          </div>
+
+          <div class="grid-cell w45 autumn">
+            <img src="/images/dist/autumn.jpg" alt="autumn" class="human-photo">
+
+            <h4><span>Graphic Design</span></h4>
+            <h3>Autumn Hutchins</h3>
+            <p><a href="http://www.autumnhutchins.com/">website</a> &bull; <a href="https://twitter.com/auttiedot">twitter</a></p>
+          </div>
+        </div>
+      </footer>
+    </div> <!-- /.container -->
+  </div> <!-- /.outer-container -->
+</body>
+</html>

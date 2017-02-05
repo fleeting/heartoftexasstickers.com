@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<ul class="sticker-pack">
+  {% for sticker in site.stickers %}
+    <li><img src="/images/dist/sticker-pack/{{ sticker.sticker_filename | escape }}" alt="{{ sticker.title | escape }}"></li>
+  {% endfor %}
+</ul>
