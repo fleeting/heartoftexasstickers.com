@@ -51,7 +51,7 @@ img {
   @media <=mobile {
     flex: 0 0 100%;
     padding: 0;
-    text-align: center;
+    z-index: 2;
 
     img {
       max-width: 150px;
@@ -65,7 +65,8 @@ img {
   background: url(/images/dist/halftone-small.png) no-repeat 0 0;
 
   @media <=mobile {
-    margin: 25px 0 0;
+    margin: -17px 0 0;
+    z-index: 1;
   }
 
   a {
@@ -159,7 +160,7 @@ footer {
       flex: 0 0 100%;
 
       &:first-child {
-        padding-bottom: 150px;
+        margin-bottom: 100px;
       }
     }
   }
