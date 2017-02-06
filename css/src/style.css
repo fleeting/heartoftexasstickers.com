@@ -149,7 +149,6 @@ footer {
   padding: 90px 12px 30px;
   text-align: center;
   background: url(/images/dist/halftone-large.png) repeat 0 0;
-  background-size: cover;
 
   .grid-cell {
     padding: 0 0 20px;
