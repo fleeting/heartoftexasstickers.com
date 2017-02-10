@@ -30,6 +30,7 @@
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
     "mb-jubilee": "^1.0.0",
+    "normalize.css": "^5.0.0",
     "postcss-calc": "^5.3.1",
     "postcss-compact-mq": "^0.2.1",
     "postcss-conditionals": "^2.0.2",

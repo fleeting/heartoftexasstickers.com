@@ -1,4 +1,4 @@
-@import "../../bower_components/normalize-css/normalize.css";
+@import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/mb-jubilee/dist/components/tooltips/tooltips.css";
 @import "_utilities.css";
 @import "_grid.css";
