@@ -1,6 +1,6 @@
 ---
 layout: sticker
 title:  "Moontower"
-categories: atx sticker landmark
-sticker_filename: sticker_moontower.png
+categories: atx sticker landmark animated
+sticker_filename: sticker_moontower.gif
 ---

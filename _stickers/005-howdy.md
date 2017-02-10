@@ -1,6 +1,6 @@
 ---
 layout: sticker
 title:  "Howdy"
-categories: atx sticker text
-sticker_filename: sticker_howdy.png
+categories: atx sticker text animated
+sticker_filename: sticker_howdy.gif
 ---

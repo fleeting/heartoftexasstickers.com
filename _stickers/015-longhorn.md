@@ -1,6 +1,6 @@
 ---
 layout: sticker
 title:  "Longhorn"
-categories: atx sticker animal
-sticker_filename: sticker_longhorn.png
+categories: atx sticker animal animated
+sticker_filename: sticker_longhorn.gif
 ---
