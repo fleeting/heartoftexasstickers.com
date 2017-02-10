@@ -95,13 +95,15 @@ img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  border-top: 1px dashed map(colors, tan);
 
   li {
     box-sizing: border-box;
     flex: 1;
     flex: 0 0 25%;
     padding: 1em;
-    border: 1px dashed map(colors, tan);
+    border-right: 1px dashed map(colors, tan);
+    border-bottom: 1px dashed map(colors, tan);
 
     @media <=mobile {
       flex: 0 0 50%;
