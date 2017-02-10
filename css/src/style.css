@@ -142,7 +142,11 @@ footer {
       font-size: 30px;
       color: map(colors, redmeat);
       vertical-align: middle;
-      animation: pulse 0.45s infinite alternate;
+
+      img {
+        width: 30px;
+        animation: pulse 0.45s infinite alternate;
+      }
     }
   }
 }
