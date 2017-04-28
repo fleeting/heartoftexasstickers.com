@@ -1,6 +1,6 @@
 ---
 layout: sticker
 title:  "Stand Up Paddle Board"
-categories: atx sticker activity
-sticker_filename: sticker_sup.png
+categories: atx sticker activity animated
+sticker_filename: sticker_sup.gif
 ---
